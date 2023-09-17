@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+h1,h2{
+    text-align:center;
+}
+body{
+    background-color:rgb(254, 255, 255);
+    text-align: center;
+}
+.container{
+    width:70%;
+    border:1px solid rgb(25, 77, 32);
+}
+input{
+    width:40%;
+    padding:7px;
+    margin:8px;
+    border:0.7px solid black;
+    /* border-radius: 20px; */
+    font-size:15px;
+
+}
+::placeholder{
+    text-align:center;
+}
+.gender{
+    text-align:center;
+    font-size:15px;
+}
+.gender1{
+    width:10px;
+}
+label{
+    text-align:left;
+    /* font-weight:bold; */
+    padding:10px;
+    font-size:20px;
+}
+.btn{
+    text-align:center;
+    margin:12px;
+    color: rgb(216, 239, 66);
+}
+button{
+    padding:10px;
+    width:20%;
+    border-style:groove;
+    border-radius: 10px;
+    background-color: rgb(221, 255, 3);
+    
+}

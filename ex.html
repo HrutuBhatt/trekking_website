@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+  </head>
+  <body>
+  <div >
+    <form action="">
+      <h2>Personal Details:</h2>
+      <div>
+        <label>Full Name:</label><br>
+        <input type="text" name="name" required>
+      </div>
+      <div class="gender">
+        <label>Gender:</label><br>
+        <input class="gender1" type="radio" name="gender">Male
+        <input class="gender1" type="radio" name="gender">Female
+        <input class="gender1" type="radio" name="gender">Others
+      </div>
+      <div>
+        <label>State:</label><br>
+        <input type="text" name="state" required>
+      </div>
+      <div>
+        <label>City:</label><br>
+        <input type="text" name="city" required>
+      </div>
+      <div>
+        <label>Address:</label><br>
+        <textarea name="address" rows="4" cols="80">Address</textarea>
+      </div>
+      <div>
+          <label for="date">Enter your birth date</label><br>
+          <input type="date" id="date" name="date" required>
+      </div><br>
+      <h2>Contact Details:</h2>
+      <div>
+        <label>Mobile Number:</label><br>
+        <input type="tel" name="mobile" placeholder="1023407601" required>
+      </div>
+      <div>
+        <label>Email:</label><br>
+        <input type="email" name="email" required>
+      </div>
+      <div class="btn">
+        <button type="submit">Submit</button>
+      </div>
+      
+    </form>
+    <script>
+//      <select  name="sab"  class="req"  id="age-range" style="width:50px; height:30px;" autocomplete="off" required/> </select> -
+// <select  name="eab"  class="req"   style="width:50px; height:30px;" autocomplete="off" required/> </select>
+
+
+// //   $(function(){
+//     var $select = $("#age-range");
+//     for (i=18;i<=60;i++){
+//         $select.append($('<option></option>').val(i).html(i))
+//     }
+// });
+
+    </script>
+  </div>
+  </body>
+</html>
+ <!-- </body>
+  </html>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <script>
+  var trekObject = {
+    "Kasol-Manali": {
+      "April": ["12", "19", "25"],
+      "May": ["3", "13", "22", "29"],
+      "June": ["5", "14", "25"]    
+    },
+    "Hampta-pass": {
+      "November": ["3", "11", "23"],
+      "December": ["1", "13", "23"],
+       "January": ["4", "14", "24"]
+    },
+    "Valley of Flowers": {
+      "July": ["2", "12", "22"],
+      "August": ["3", "13", "23"],
+      "Sepetember": ["4", "14", "24"]    
+    },
+    "Rishikesh": {
+      "April": ["4", "21", "27"],
+      "May": ["3", "13", "22", "29"],
+      "June": ["5", "14", "25"]    
+    },
+    "Himalayas-Basecamp": {
+      "November": ["3", "11", "23"],
+      "December": ["1", "13", "23"],
+      "January": ["4", "14", "24"]    
+    },
+    "Kedarkantha": {
+       "November": ["3", "11", "23"],
+      "December": ["1", "13", "23"],
+      "January": ["4", "14", "24"]     
+    },
+    "Saputara": {
+      "April": ["13", "20", "26"],
+      "May": ["4", "14", "23", "30"],
+      "June": ["6", "15", "26"]    
+    }
+  }
+  window.onload = function() {
+    var trekSel = document.getElementById("trek");
+    var monthSel = document.getElementById("month");
+    var dateSel = document.getElementById("date");
+    for (var x in trekObject) {
+      trekSel.options[trekSel.options.length] = new Option(x, x);
+    }
+    trekSel.onchange = function() {
+      
+      dateSel.length = 1;
+      monthSel.length = 1;
+      
+      for (var y in trekObject[this.value]) {
+        monthSel.options[monthSel.options.length] = new Option(y, y);
+      }
+    }
+    monthSel.onchange = function() {
+     
+      dateSel.length = 1;
+     
+      var z = trekObject[trekSel.value][this.value];
+      for (var i = 0; i < z.length; i++) {
+        dateSel.options[dateSel.options.length] = new Option(z[i], z[i]);
+      }
+    }
+  }
+  </script> -->
+  <!-- </head>   
+  <body>
+  
+  <h1><b><u>Select your Trek:</u></b></h1>
+  
+  <form name="form1" id="form1" action="/action_page.php">
+  Trek: <select name="trek" id="trek" style="width:30%;">
+      <option value="" selected="selected">Select Trek</option>
+    </select>
+    <br><br>
+  Month: <select name="month" id="month" style="width:30%;">
+      <option value="" selected="selected">Please select the trek first</option>
+    </select>
+    <br><br>
+  Date: <select name="date" id="date" style="width:30%;">
+      <option value="" selected="selected">Please select the month first</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">  
+  </form>
+  
+  </body>
+  </html> -->
+  <!-- <div>
+      <label><b>Select Your Trek</b></label><br>
+      <select name="trek" id="trek" >
+        <option value="Manali-Kasol">Manali-Kasol</option>
+        <option value="Hampta-Pass">Hampta-Pass</option>
+        <option value="Valley of Flowers">Valley of Flowers</option>
+        <option value="Himalayas-basecamp">Himalayas Basecamp</option>
+        <option value="Rishikesh">Rishikesh</option>
+        <option value="kedarnath">Kedarnath</option>
+        <option value="Saputara">Saputara</option>
+      </select>
+    </div> -->
+
+    <!-- <?php
+session_start();
+
+$current_pwd=$_POST['currentpassword'];
+$new_pwd=$_POST['newpassword'];
+$sql="SELECT password FROM registration WHERE password='$current_pwd'";
+$result=mysqli_query($link,$sql);
+if($result){
+    $sql="UPDATE registration SET password='$new_pwd' WHERE username='$username'";
+    
+    header('location:profile.php');
+    echo "Password updated.";
+}else{
+    echo "current password did not match.";
+}
+?> -->
